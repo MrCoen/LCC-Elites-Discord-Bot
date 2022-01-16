@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./main.css">
+  <title>LCC Elites - Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="shortcut icon" type="image/png" href="https://leedscitycollege.ac.uk/wp-content/themes/lcc/assets/img/favicon.png">
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/858ff2992b.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+  <nav class="navbar">
+    <ul class="navbar-nav">
+      <li class="logo">
+        <a href="" class="nav-link">
+          
+          <span class="nav-text"><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fstore.leedscitycollege.ac.uk%2Fshort-courses%2Fschool-of-travel-food-and-drink%2Fcourse-fees&psig=AOvVaw0J2ilVmxQgWe7KyjclEA61&ust=1632142932614000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCPCnv7KMi_MCFQAAAAAdAAAAABAD" alt="">LCC ELites</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="" class="nav-link">
+          <i class="fas fa-home"></i>
+          <span class="nav-text">Home</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="" class="nav-link">
+          <i class="fas fa-code"></i>
+          <span class="nav-text">Code</span>
+        </a>
+      </li><li class="nav-item">
+        <a href="" class="nav-link">      
+          <i class="fas fa-book"></i>
+          <span class="nav-text">Resources</span>
+        </a>
+    </ul>
+  </nav>
+
+
+ <div class="container">
+
+   <div class="section-1">
+        <h1 class="top">LCC Elites 2021</h1>
+
+   </div>
+
+ </div>
+
+<style>
+
+  *{
+    overflow:hidden;
+  }
+
+  .container{
+    /* float:right; */
+    width:100vw;
+    margin-left:5em;
+    height:100vh;
+    overflow:hidden;
+  }
+
+  .section-1{
+    width:100vw;
+    height:100vh;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(128,0,0,1) 100%);
+    text-align:center;
+  }
+  .section-1 h1{
+    display:block;
+    margin:auto;
+    color:white;
+  }
+
+  .section-1 h1 .top{
+    position:absoute;
+    padding-top:10em;
+  }
+
+ :root{
+  font-size: 16px;
+font-family: 'Source Code Pro', monospace;
+  --transition-speed: 600ms;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  /* background-color: #4b4b4b; */
+}
+
+main{
+  margin-left: 5rem;
+  padding: 1rem;
+}
+
+main h1 {
+  margin: 0;
+  margin-bottom: 2rem;
+}
+
+.navbar{
+  position: fixed;
+  background-color: black;
+  transition: width 200ms ease;
+}
+
+.navbar:hover .logo .nav-link{
+   	-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity= 60); /* // for IE8 */
+	filter: alpha(opacity= 39); /* //for IE5-7 */
+}
+
+
+
+.navbar-nav{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.nav-item{
+  width: 100%;
+}
+
+.nav-link{
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  text-decoration: none;
+  color: white;
+  filter: grayscale(100%) opacity(0.7);
+  transition: var(--transition-speed);
+}
+
+.nav-link:hover{
+  /* filter: grayscale(0%) opacity(1); */
+  background-color: #3e3e3e;
+}
+
+.nav-text{
+  display: none;
+  margin-left: 1rem;
+}
+
+.nav-link i{
+  min-width: 2rem;
+  max-height: 2rem;
+  margin: 0 1.5rem;
+}
+
+.logo{
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: black;
+  font-size: 1.5rem;
+  letter-spacing: 0.3ch;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.logo i{
+  transform: rotate(0deg);
+  transition: transform var(--transition-speed);
+}
+
+.navbar:hover .logo i{
+  transform: rotate(-180deg);
+}
+
+@media only screen and (max-width:600px){
+  .navbar{
+    bottom: 0;
+    width: 100vw;
+    height: 5rem;
+  }
+  .logo{
+    display: none;
+  }
+  .navbar-nav{
+    flex-direction: row;
+  }
+  .nav-link{
+    justify-content: center;
+  }
+  main {
+    margin: 0;
+  }
+  /* .container{
+    margin:0;
+    width:100%;
+  } */
+}
+
+@media only screen and (min-width:600px){
+  .navbar{
+    top: 0;
+    width: 5rem;
+    height: 100vh;
+  }
+  .navbar:hover{
+    width: 16rem;
+  }
+  .navbar:hover .nav-text{
+    display: inline;
+    transition: opacity var(--transition-speed);
+  }
+    /* .container{
+    margin:0;
+    width:100%;
+  } */
+}
+</style>
+
+</body>
+</html>
